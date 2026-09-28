@@ -16,6 +16,19 @@
             // when one variable modifies the object --> the other variable also sees the change
             #endregion
 
+            #region Question 2
+            //public struct Shipment { public string Description; public double Weight; public decimal DeliveryFee;}
+
+            // three problems with this design from an encapsulation perspective --> 1- All fields are public 2- There are no methods to manipulate the data to do validations 3- can't prevent the set and remain the get or vice versa
+
+            // private fields and public properties improve this design? --> we can control how the data is accessed and ensure that it is always in a valid state.
+            #endregion
+
+
+
+
+
+
         }
     }
 }
