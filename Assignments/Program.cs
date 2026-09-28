@@ -24,9 +24,18 @@
             // private fields and public properties improve this design? --> we can control how the data is accessed and ensure that it is always in a valid state.
             #endregion
 
+            #region 1. Create a DeliveryAddress struct with:
+            DeliveryAddress address1 = new DeliveryAddress("New York", "5th", 123);
+            DeliveryAddress address2 = address1; 
+            
+            Console.WriteLine($"Address 1: {address1.GetFullAddress()}");
+            Console.WriteLine($"Address 2: {address2.GetFullAddress()}");
 
+            address2.City = "Los Angeles";
 
-
+            Console.WriteLine($"Address 1: {address1.GetFullAddress()}");
+            Console.WriteLine($"Address 2: {address2.GetFullAddress()}");
+            #endregion
 
 
         }
