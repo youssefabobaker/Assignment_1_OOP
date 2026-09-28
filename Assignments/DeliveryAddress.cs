@@ -17,7 +17,7 @@
 
         public string GetFullAddress()
         {
-            return $"{BuildingNumber} {Street}, {City}";
+            return $"{BuildingNumber} {Street} Street, {City}";
         }
 
 
